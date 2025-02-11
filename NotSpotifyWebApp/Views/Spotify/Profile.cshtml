@@ -1,0 +1,28 @@
+﻿@model ProfileViewModel
+
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<div class="profile-page mt-5">
+    
+    <div class="container summary-container fade-to-black p-4 d-flex flex-row gap-3">
+        <div class="profile-image-container">
+            <img src="@Model.Image" />
+        </div>
+        <div class="profile-description d-flex flex-column justify-content-center">
+            <p class="translucent-text m-0">Profile</p>
+            <p class="display-name mb-1">@Model.DisplayName</p>
+            <p class="m-0">
+                <span class="translucent-text">@(Model.Followers.Total + 2) Public Playlists</span>
+                <i class="bi bi-dot"></i>
+                @Model.Followers.Total Followers
+            </p>
+        </div>
+    </div>
+
+    <partial name="_TopArtists.cshtml" model="Model.TopArtists" />
+
+    <partial name="_TopTracks.cshtml" model="Model.TopTracks" />
+
+</div>

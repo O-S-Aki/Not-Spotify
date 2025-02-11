@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "WwXtP/hyHeBQ/kIiGrbqAuPO6Sy3nMPP88QxBrn1pPCvxS432UgBFJd64aNBEdkmRy/rDxBxJe3YKbCrfMDniQ==",
+  "success": true,
+  "projectFilePath": "C:\\Workspaces\\Sam Akiode\\O-S-Aki\\Not-Spotify\\NotSpotifyClassLibrary\\NotSpotifyClassLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DeveloperTraining\\.nuget\\packages\\embedio\\3.5.2\\embedio.3.5.2.nupkg.sha512",
+    "C:\\Users\\DeveloperTraining\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\DeveloperTraining\\.nuget\\packages\\spotifyapi.web\\7.2.1\\spotifyapi.web.7.2.1.nupkg.sha512",
+    "C:\\Users\\DeveloperTraining\\.nuget\\packages\\spotifyapi.web.auth\\7.2.1\\spotifyapi.web.auth.7.2.1.nupkg.sha512",
+    "C:\\Users\\DeveloperTraining\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.435\\stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
+    "C:\\Users\\DeveloperTraining\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.435\\stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\DeveloperTraining\\.nuget\\packages\\unosquare.swan.lite\\3.1.0\\unosquare.swan.lite.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,42 @@
+﻿@model SpotifyAPI.Web.Paging<SpotifyAPI.Web.SavedTrack>
+
+@{
+    ViewData["Title"] = "Tracks";
+}
+
+<h1>Tracks</h1>
+
+<hr />
+
+<h2>Your liked songs</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Cover</th>
+            <th>Song</th>
+            <th>Artist</th>
+            <th>Play</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Items != null && Model.Items.Any())
+        {
+            @foreach (var track in Model.Items)
+            {
+                <tr>
+                    <td>
+                        <img src="@track.Track.Album.Images[0].Url" width="50" height="50" />
+                    </td>
+                    <td>@track.Track.Name</td>
+                    <td>@string.Join(", ", track.Track.Artists.Select(a => a.Name))</td>
+                    <td>
+                        <button class="btn btn-secondary">
+                            <i class="bi bi-play"></i> Play
+                        </button>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

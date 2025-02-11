@@ -1,0 +1,68 @@
+﻿@model TopTracksViewModel
+
+@{
+    int maxTopTracks = 5;
+}
+
+<div class="container top-tracks-container mt-3 p-4 d-flex flex-column">
+    <h5 class="m-0 section-header">Top tracks this month</h5>
+    <p class="m-0 translucent-text">Only visible to you</p>
+
+    <div class="table-responsive mt-3">
+        <table class="table top-tracks-table">
+            <tbody>
+                @for (int i = 0; i < maxTopTracks; i++)
+                {
+                    if (i < Model.Items.Count)
+                    {
+                        TrackViewModel track = Model.Items[i];
+
+                        List<string> artistNames = new List<string>();
+                        foreach (var artist in track.Artists)
+                        {
+                            artistNames.Add(artist.Name);
+                        }
+
+                        <tr>
+                            <td class="align-middle">
+                                <p class="ps-3 m-0 translucent-text">@(i + 1)</p>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-row gap-3 align-middle">
+                                    <div class="track-image-container">
+                                        <img src="@track.Album.Images[0].Url" class="h-100" />
+                                    </div>
+                                    
+                                    <div>
+                                        <h6 class="m-0">@track.Name</h6>
+                                        <p class="m-0 translucent-text">
+                                            @string.Join(", ", artistNames)
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="d-flex flex-row justify-content-between align-baseline-middle">
+                                <p class="m-0 translucent-text">@track.Album.Name</p>
+
+                                <div class="d-flex flex-row gap-3">
+                                    <p class="m-0 translucent-text d-inline-block">@track.DurationFormatted</p>
+                                    <i class="bi bi-three-dots"></i>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                    else
+                    {
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+@{
+    /* <i class="bi bi-explicit-fill"></i> */
+}

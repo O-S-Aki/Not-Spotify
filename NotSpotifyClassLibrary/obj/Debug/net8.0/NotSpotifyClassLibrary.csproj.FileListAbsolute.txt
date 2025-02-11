@@ -1,0 +1,25 @@
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyClassLibrary\bin\Debug\net8.0\NotSpotifyClassLibrary.deps.json
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyClassLibrary\bin\Debug\net8.0\NotSpotifyClassLibrary.dll
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyClassLibrary\bin\Debug\net8.0\NotSpotifyClassLibrary.pdb
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyClassLibrary\obj\Debug\net8.0\NotSpotifyClassLibrary.csproj.AssemblyReference.cache
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyClassLibrary\obj\Debug\net8.0\NotSpotifyClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyClassLibrary\obj\Debug\net8.0\NotSpotifyClassLibrary.AssemblyInfoInputs.cache
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyClassLibrary\obj\Debug\net8.0\NotSpotifyClassLibrary.AssemblyInfo.cs
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyClassLibrary\obj\Debug\net8.0\NotSpotifyClassLibrary.csproj.CoreCompileInputs.cache
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyClassLibrary\obj\Debug\net8.0\NotSpotifyClassLibrary.dll
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyClassLibrary\obj\Debug\net8.0\refint\NotSpotifyClassLibrary.dll
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyClassLibrary\obj\Debug\net8.0\NotSpotifyClassLibrary.pdb
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyClassLibrary\obj\Debug\net8.0\ref\NotSpotifyClassLibrary.dll
+C:\Workspaces\Personal\not-spotify\NotSpotifyClassLibrary\bin\Debug\net8.0\NotSpotifyClassLibrary.deps.json
+C:\Workspaces\Personal\not-spotify\NotSpotifyClassLibrary\bin\Debug\net8.0\NotSpotifyClassLibrary.dll
+C:\Workspaces\Personal\not-spotify\NotSpotifyClassLibrary\bin\Debug\net8.0\NotSpotifyClassLibrary.pdb
+C:\Workspaces\Personal\not-spotify\NotSpotifyClassLibrary\obj\Debug\net8.0\NotSpotifyClassLibrary.csproj.AssemblyReference.cache
+C:\Workspaces\Personal\not-spotify\NotSpotifyClassLibrary\obj\Debug\net8.0\NotSpotifyClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspaces\Personal\not-spotify\NotSpotifyClassLibrary\obj\Debug\net8.0\NotSpotifyClassLibrary.AssemblyInfoInputs.cache
+C:\Workspaces\Personal\not-spotify\NotSpotifyClassLibrary\obj\Debug\net8.0\NotSpotifyClassLibrary.AssemblyInfo.cs
+C:\Workspaces\Personal\not-spotify\NotSpotifyClassLibrary\obj\Debug\net8.0\NotSpotifyClassLibrary.csproj.CoreCompileInputs.cache
+C:\Workspaces\Personal\not-spotify\NotSpotifyClassLibrary\obj\Debug\net8.0\NotSpotifyClassLibrary.sourcelink.json
+C:\Workspaces\Personal\not-spotify\NotSpotifyClassLibrary\obj\Debug\net8.0\NotSpotifyClassLibrary.dll
+C:\Workspaces\Personal\not-spotify\NotSpotifyClassLibrary\obj\Debug\net8.0\refint\NotSpotifyClassLibrary.dll
+C:\Workspaces\Personal\not-spotify\NotSpotifyClassLibrary\obj\Debug\net8.0\NotSpotifyClassLibrary.pdb
+C:\Workspaces\Personal\not-spotify\NotSpotifyClassLibrary\obj\Debug\net8.0\ref\NotSpotifyClassLibrary.dll

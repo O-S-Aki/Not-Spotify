@@ -1,0 +1,79 @@
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\bin\Debug\net8.0\appsettings.Development.json
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\bin\Debug\net8.0\appsettings.json
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\bin\Debug\net8.0\NotSpotifyWebApp.staticwebassets.runtime.json
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\bin\Debug\net8.0\NotSpotifyWebApp.exe
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\bin\Debug\net8.0\NotSpotifyWebApp.deps.json
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\bin\Debug\net8.0\NotSpotifyWebApp.runtimeconfig.json
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\bin\Debug\net8.0\NotSpotifyWebApp.dll
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\bin\Debug\net8.0\NotSpotifyWebApp.pdb
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\bin\Debug\net8.0\EmbedIO.dll
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\bin\Debug\net8.0\SpotifyAPI.Web.dll
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\bin\Debug\net8.0\SpotifyAPI.Web.Auth.dll
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\bin\Debug\net8.0\Swan.Lite.dll
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\bin\Debug\net8.0\NotSpotifyClassLibrary.dll
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\bin\Debug\net8.0\NotSpotifyClassLibrary.pdb
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.csproj.AssemblyReference.cache
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.AssemblyInfoInputs.cache
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.AssemblyInfo.cs
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.csproj.CoreCompileInputs.cache
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.RazorAssemblyInfo.cache
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.RazorAssemblyInfo.cs
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\staticwebassets.build.json
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\staticwebassets.development.json
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.NotSpotifyWebApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.build.NotSpotifyWebApp.props
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.NotSpotifyWebApp.props
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.NotSpotifyWebApp.props
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\scopedcss\bundle\NotSpotifyWebApp.styles.css
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\scopedcss\projectbundle\NotSpotifyWebApp.bundle.scp.css
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpoti.7C42ED1D.Up2Date
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.dll
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\refint\NotSpotifyWebApp.dll
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.pdb
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.genruntimeconfig.cache
+C:\Workspaces\Sam Akiode\sam-akiode\Z000 - Optional Personal Tasks\NotSpotify\NotSpotifyWebApp\obj\Debug\net8.0\ref\NotSpotifyWebApp.dll
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\bin\Debug\net8.0\appsettings.Development.json
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\bin\Debug\net8.0\appsettings.json
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\bin\Debug\net8.0\NotSpotifyWebApp.staticwebassets.runtime.json
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\bin\Debug\net8.0\NotSpotifyWebApp.exe
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\bin\Debug\net8.0\NotSpotifyWebApp.deps.json
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\bin\Debug\net8.0\NotSpotifyWebApp.runtimeconfig.json
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\bin\Debug\net8.0\NotSpotifyWebApp.dll
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\bin\Debug\net8.0\NotSpotifyWebApp.pdb
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\bin\Debug\net8.0\EmbedIO.dll
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\bin\Debug\net8.0\SpotifyAPI.Web.dll
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\bin\Debug\net8.0\SpotifyAPI.Web.Auth.dll
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\bin\Debug\net8.0\Swan.Lite.dll
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\bin\Debug\net8.0\NotSpotifyClassLibrary.dll
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\bin\Debug\net8.0\NotSpotifyClassLibrary.pdb
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.csproj.AssemblyReference.cache
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.AssemblyInfoInputs.cache
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.AssemblyInfo.cs
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.csproj.CoreCompileInputs.cache
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.RazorAssemblyInfo.cache
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.RazorAssemblyInfo.cs
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.sourcelink.json
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\staticwebassets.build.json
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\staticwebassets.development.json
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.NotSpotifyWebApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.build.NotSpotifyWebApp.props
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.NotSpotifyWebApp.props
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.NotSpotifyWebApp.props
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\scopedcss\bundle\NotSpotifyWebApp.styles.css
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\scopedcss\projectbundle\NotSpotifyWebApp.bundle.scp.css
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpoti.7C42ED1D.Up2Date
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.dll
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\refint\NotSpotifyWebApp.dll
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.pdb
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\NotSpotifyWebApp.genruntimeconfig.cache
+C:\Workspaces\Personal\not-spotify\NotSpotifyWebApp\obj\Debug\net8.0\ref\NotSpotifyWebApp.dll
