@@ -1,10 +1,10 @@
-﻿@model ProfileViewModel
+﻿@model UserProfileViewModel
 
 @{
-    ViewData["Title"] = "Profile";
+    ViewData["Title"] = "Your Profile";
 }
 
-<div class="profile-page mt-5">
+<div class="profile-page mt-0">
     
     <div class="container summary-container fade-to-black p-4 d-flex flex-row gap-3">
         <div class="profile-image-container">
@@ -24,5 +24,7 @@
     <partial name="_TopArtists.cshtml" model="Model.TopArtists" />
 
     <partial name="_TopTracks.cshtml" model="Model.TopTracks" />
+
+    <partial name="_PublicPlaylists.cshtml" model="Model.PublicPlaylists" />
 
 </div>

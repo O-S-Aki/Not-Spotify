@@ -14,26 +14,31 @@ using SpotifyAPI.Web;
 namespace NotSpotifyWebApp.Models
 {
     /// <summary>
-    /// Holds the definition for the <see cref="TopTracksViewModel"/> class.
+    /// Holds the definition for the <see cref="TrackListViewModel"/> class.
     /// </summary>
-    public class TopTracksViewModel
+    public class TrackListViewModel
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="TopTracksViewModel"/> class.
+        /// Initializes a new instance of the <see cref="TrackListViewModel"/> class.
         /// </summary>
         /// <param name="topTracks">The user's top tracks.</param>
         [SetsRequiredMembers]
-        public TopTracksViewModel(UsersTopTracksResponse topTracks)
+        public TrackListViewModel(UsersTopTracksResponse topTracks)
         {
-            Href = topTracks.Href;
             Total = topTracks.Total;
             Items = TrackViewModel.ToViewModels(topTracks.Items);
         }
 
         /// <summary>
-        /// Gets or sets the Href.
+        /// Initializes a new instance of the <see cref="TrackListViewModel"/> class.
         /// </summary>
-        public required string Href { get; set; }
+        /// <param name="topTracks">The artist's top tracks.</param>
+        [SetsRequiredMembers]
+        public TrackListViewModel(ArtistsTopTracksResponse topTracks)
+        {
+            Total = topTracks.Tracks.Count;
+            Items = TrackViewModel.ToViewModels(topTracks.Tracks);
+        }
 
         /// <summary>
         /// Gets or sets the total number of top artists for the month.

@@ -14,16 +14,16 @@ using SpotifyAPI.Web;
 namespace NotSpotifyWebApp.Models
 {
     /// <summary>
-    /// Holds the definition for the <see cref="TopArtistsViewModel"/> class.
+    /// Holds the definition for the <see cref="ArtistListViewModel"/> class.
     /// </summary>
-    public class TopArtistsViewModel
+    public class ArtistListViewModel
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="TopArtistsViewModel"/> class.
+        /// Initializes a new instance of the <see cref="ArtistListViewModel"/> class.
         /// </summary>
         /// <param name="topArtists">The user's top artists.</param>
         [SetsRequiredMembers]
-        public TopArtistsViewModel(UsersTopArtistsResponse topArtists)
+        public ArtistListViewModel(UsersTopArtistsResponse topArtists)
         {
             Href = topArtists.Href;
             Total = topArtists.Total;

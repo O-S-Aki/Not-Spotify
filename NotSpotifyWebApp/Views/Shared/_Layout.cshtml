@@ -16,6 +16,8 @@
 
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/profile.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/artist-page.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/responsive-cards.css" asp-append-version="true" />
 
     <link rel="stylesheet" href="~/NotSpotifyWebApp.styles.css" asp-append-version="true" />
 </head>
@@ -23,9 +25,8 @@
     <header>
         <nav id="navbar" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                <a class="navbar-brand" asp-area="" asp-controller="User" asp-action="Index">
                     <img class="navbar-brand-image m-2" src="~/images/spotify-icon-white.svg" />
-                    Not Spotify
                     </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -33,15 +34,15 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Spotify" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Spotify" asp-action="Playlists">Playlists</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Spotify" asp-action="Tracks">Tracks</a>
-                        </li>
+                        @{ /*
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="User" asp-action="Index">Profile</a>
+                            </li>
+                            */
+                        }
                     </ul>
                 </div>
             </div>

@@ -14,21 +14,23 @@ using SpotifyAPI.Web;
 namespace NotSpotifyWebApp.Models
 {
     /// <summary>
-    /// Holds the definition for the <see cref="ProfileViewModel"/> class.
+    /// Holds the definition for the <see cref="UserProfileViewModel"/> class.
     /// </summary>
-    public class ProfileViewModel
+    public class UserProfileViewModel
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ProfileViewModel"/> class.
+        /// Initializes a new instance of the <see cref="UserProfileViewModel"/> class.
         /// </summary>
         /// <param name="user">The currently logged in user.</param>
         /// <param name="artists">The top artists for the month.</param>
         /// <param name="tracks">The top tracks for the month.</param>
+        /// <param name="publicPlaylists">The user's public playlists.</param>
         [SetsRequiredMembers]
-        public ProfileViewModel(
+        public UserProfileViewModel(
             PrivateUser user,
             UsersTopArtistsResponse artists,
-            UsersTopTracksResponse tracks)
+            UsersTopTracksResponse tracks,
+            List<FullPlaylist> publicPlaylists)
         {
             DisplayName = user.DisplayName;
             Followers = user.Followers;
@@ -38,8 +40,9 @@ namespace NotSpotifyWebApp.Models
             Uri = user.Uri;
             Type = user.Type;
 
-            TopArtists = new TopArtistsViewModel(artists);
-            TopTracks = new TopTracksViewModel(tracks);
+            TopArtists = new ArtistListViewModel(artists);
+            TopTracks = new TrackListViewModel(tracks);
+            PublicPlaylists = new PublicPlaylistsViewModel(publicPlaylists);
 
             Type = $"{Type[0].ToString().ToUpper()}{Type.Substring(1)}";
         }
@@ -82,11 +85,16 @@ namespace NotSpotifyWebApp.Models
         /// <summary>
         /// Gets or sets the top artists.
         /// </summary>
-        public required TopArtistsViewModel TopArtists { get; set; }
+        public required ArtistListViewModel TopArtists { get; set; }
 
         /// <summary>
         /// Gets or sets the top tracks.
         /// </summary>
-        public required TopTracksViewModel TopTracks { get; set; }
+        public required TrackListViewModel TopTracks { get; set; }
+
+        /// <summary>
+        /// Gets or sets the public playluists.
+        /// </summary>
+        public required PublicPlaylistsViewModel PublicPlaylists { get; set; }
     }
 }

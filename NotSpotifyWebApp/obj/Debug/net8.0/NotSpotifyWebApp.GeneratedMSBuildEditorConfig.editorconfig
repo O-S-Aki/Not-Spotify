@@ -22,12 +22,16 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/Artist/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aXN0XFByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/Artist/_PopularTracks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aXN0XF9Qb3B1bGFyVHJhY2tzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/Shared/Error.cshtml]
@@ -38,24 +42,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/Spotify/Playlists.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BvdGlmeVxQbGF5bGlzdHMuY3NodG1s
+[C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/User/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/Spotify/Profile.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BvdGlmeVxQcm9maWxlLmNzaHRtbA==
+[C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/User/_PublicPlaylists.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfUHVibGljUGxheWxpc3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/Spotify/Tracks.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BvdGlmeVxUcmFja3MuY3NodG1s
+[C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/User/_TopArtists.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfVG9wQXJ0aXN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/Spotify/_TopArtists.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BvdGlmeVxfVG9wQXJ0aXN0cy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/Spotify/_TopTracks.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BvdGlmeVxfVG9wVHJhY2tzLmNzaHRtbA==
+[C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/User/_TopTracks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfVG9wVHJhY2tzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/_ViewImports.cshtml]

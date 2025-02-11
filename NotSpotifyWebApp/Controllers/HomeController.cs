@@ -40,15 +40,6 @@ namespace NotSpotifyWebApp.Controllers
         }
 
         /// <summary>
-        /// Gets the view for the Privacy page.
-        /// </summary>
-        /// <returns>Privacy view.</returns>
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        /// <summary>
         /// Gets the view for the Error page.
         /// </summary>
         /// <returns>Error view.</returns>

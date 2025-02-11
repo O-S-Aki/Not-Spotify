@@ -1,12 +1,15 @@
-﻿@model TopTracksViewModel
+﻿@model TrackListViewModel
 
 @{
     int maxTopTracks = 5;
 }
 
-<div class="container top-tracks-container mt-3 p-4 d-flex flex-column">
+<div class="container top-tracks-container section-container mt-3 p-4 d-flex flex-column">
     <h5 class="m-0 section-header">Top tracks this month</h5>
-    <p class="m-0 translucent-text">Only visible to you</p>
+    <div class="d-flex flex-row justify-content-between">
+        <p class="m-0 translucent-text">Only visible to you</p>
+        <p class="m-0 translucent-text"><strong>Show all</strong></p>
+    </div>
 
     <div class="table-responsive mt-3">
         <table class="table top-tracks-table">
@@ -29,25 +32,31 @@
                             </td>
                             <td>
                                 <div class="d-flex flex-row gap-3 align-middle">
-                                    <div class="track-image-container">
+                                    <div class="track-image-container section-image-container">
                                         <img src="@track.Album.Images[0].Url" class="h-100" />
                                     </div>
                                     
                                     <div>
                                         <h6 class="m-0">@track.Name</h6>
                                         <p class="m-0 translucent-text">
+                                            @if (track.Explicit)
+                                            {
+                                                <i class="bi bi-explicit-fill m-1"></i>
+                                            }
                                             @string.Join(", ", artistNames)
                                         </p>
                                     </div>
                                 </div>
                             </td>
 
-                            <td class="d-flex flex-row justify-content-between align-baseline-middle">
-                                <p class="m-0 translucent-text">@track.Album.Name</p>
+                            <td class="align-middle">
+                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                    <p class="m-0 translucent-text">@track.Album.Name</p>
 
-                                <div class="d-flex flex-row gap-3">
-                                    <p class="m-0 translucent-text d-inline-block">@track.DurationFormatted</p>
-                                    <i class="bi bi-three-dots"></i>
+                                    <div class="d-flex flex-row gap-3 align-items-center">
+                                        <p class="m-0 translucent-text">@track.DurationFormatted</p>
+                                        <i class="bi bi-three-dots"></i>
+                                    </div>
                                 </div>
                             </td>
                         </tr>
@@ -60,9 +69,3 @@
         </table>
     </div>
 </div>
-
-
-
-@{
-    /* <i class="bi bi-explicit-fill"></i> */
-}

@@ -1,0 +1,38 @@
+﻿@model PublicPlaylistsViewModel
+
+@{
+    int maxPlaylists = 6;
+}
+
+<div class="container public-playlists-container section-container mt-3 p-4 d-flex flex-column">
+    <div class="d-flex flex-row justify-content-between">
+        <h5 class="m-0 section-header">Public Playlists</h5>
+        <p class="m-0 translucent-text"><strong>Show all</strong></p>
+    </div>
+
+    <div class="public-playlist-cards mt-3 row">
+        @for (int i = 0; i < maxPlaylists; i++)
+        {
+            if (i < Model.Total)
+            {
+                PlaylistViewModel playlist = Model.Items[i];
+
+                <div class="playlist-card responsive-card col-6 col-sm-4 col-md-3 col-lg-2 p-3">
+                    <div class="playlist-image-container section-image-container w-100">
+                        <img src="@playlist.Image" class="w-100 h-100" />
+                    </div>
+
+                    <div class="playlists-text-container text-container">
+                        <h6 class="mt-3 mb-0">@playlist.Name</h6>
+                        <p class="translucent-text mb-0">By @playlist.Owner.DisplayName</p>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="top-artist-card col p-2">
+                </div>
+            }
+        }
+    </div>
+</div>

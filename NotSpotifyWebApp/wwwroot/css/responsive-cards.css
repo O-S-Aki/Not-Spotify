@@ -1,0 +1,27 @@
+﻿/* Only <2> cards shown on <extra small> screens */
+@media (max-width: 575px) {
+    .responsive-card:nth-child(n+3) {
+        display: none;
+    }
+}
+
+/* Only <3> cards shown on <small> screens */
+@media (min-width: 576px) and (max-width: 767px) {
+    .responsive-card:nth-child(n+4) {
+        display: none;
+    }
+}
+
+/* Only <4> cards shown on <medium> screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    .responsive-card:nth-child(n+5) {
+        display: none;
+    }
+}
+
+/* Only <6> cards shown on <large> screens and above */
+@media (min-width: 992px) {
+    .responsive-card:nth-child(n+7) {
+        display: none;
+    }
+}

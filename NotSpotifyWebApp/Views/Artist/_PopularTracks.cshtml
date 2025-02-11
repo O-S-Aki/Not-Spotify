@@ -1,0 +1,57 @@
+﻿@model TrackListViewModel
+
+@{
+    int maxTopTracks = 5;
+}
+
+<div class="container top-tracks-container section-container mt-3 p-4 d-flex flex-column">
+    <h5 class="m-0 section-header">Popular</h5>
+
+    <div class="table-responsive mt-3">
+        <table class="table top-tracks-table">
+            <tbody>
+                @for (int i = 0; i < maxTopTracks; i++)
+                {
+                    if (i < Model.Items.Count)
+                    {
+                        TrackViewModel track = Model.Items[i];
+
+                        <tr>
+                            <td class="align-middle">
+                                <p class="ps-3 m-0 translucent-text">@(i + 1)</p>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-row gap-3 align-middle">
+                                    <div class="track-image-container section-image-container">
+                                        <img src="@track.Album.Images[0].Url" class="h-100" />
+                                    </div>
+
+                                    <div>
+                                        <h6 class="m-0">@track.Name</h6>
+                                        <p class="m-0 translucent-text">
+                                            @if (track.Explicit)
+                                            {
+                                                <i class="bi bi-explicit-fill m-1"></i>
+                                            }
+                                            @track.Type
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="align-middle">
+                                <div class="d-flex flex-row gap-3 align-items-center">
+                                    <p class="m-0 translucent-text">@track.DurationFormatted</p>
+                                    <i class="bi bi-three-dots"></i>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                    else
+                    {
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

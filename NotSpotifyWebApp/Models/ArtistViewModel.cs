@@ -33,7 +33,24 @@ namespace NotSpotifyWebApp.Models
             Type = artist.Type;
             Followers = artist.Followers;
 
+            Verified = artist.Followers.Total >= 50000;
+
+            PopularityStars = artist.Popularity / 10;
+            PopularityHasHalfStar = artist.Popularity % 10 >= 5;
+
             Type = $"{Type[0].ToString().ToUpper()}{Type.Substring(1)}";
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ArtistViewModel"/> class.
+        /// </summary>
+        /// <param name="artist">The artist to view.</param>
+        /// <param name="topTracks">Their top tracks.</param>
+        [SetsRequiredMembers]
+        public ArtistViewModel(FullArtist artist, ArtistsTopTracksResponse topTracks)
+            : this(artist)
+        {
+            TopTracks = new TrackListViewModel(topTracks);
         }
 
         /// <summary>
@@ -70,6 +87,26 @@ namespace NotSpotifyWebApp.Models
         /// Gets or sets the Followers.
         /// </summary>
         public required Followers Followers { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether the artist is verified.
+        /// </summary>
+        public bool Verified { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Popularity.
+        /// </summary>
+        public required int PopularityStars { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether a half star should be drawn for the popularity.
+        /// </summary>
+        public required bool PopularityHasHalfStar { get; set; }
+
+        /// <summary>
+        /// Gets or sets the top tracks.
+        /// </summary>
+        public required TrackListViewModel? TopTracks { get; set; }
 
         /// <summary>
         /// Converts from a list of <see cref="FullArtist"/> to a list of <see cref="ArtistViewModel"/>.

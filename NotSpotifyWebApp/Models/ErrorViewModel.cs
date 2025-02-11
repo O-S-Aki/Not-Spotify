@@ -1,12 +1,12 @@
 ﻿/*==============================================================================
- *
- * Description - The model for viewing an exception.
- *
- * Copyright © Dami Sam Akiode, 2025
- *
- * Personal Project - Not Spotify (ErrorViewModel.cs)
- *
- *============================================================================*/
+*
+* Description - The model for viewing an exception.
+*
+* Copyright © Dami Sam Akiode, 2025
+*
+* Personal Project - Not Spotify (ErrorViewModel.cs)
+*
+*============================================================================*/
 
 namespace NotSpotifyWebApp.Models
 {

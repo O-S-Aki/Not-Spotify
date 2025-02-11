@@ -58,7 +58,7 @@ namespace NotSpotifyWebApp.Controllers
             HttpContext.Session.SetString("AccessToken", _AuthService.GetAccessToken());
 
             // return Content($"Welcome, {user.DisplayName}!");
-            return RedirectToAction("Index", "Spotify");
+            return RedirectToAction("index", "user");
         }
     }
 }

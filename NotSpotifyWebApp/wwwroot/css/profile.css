@@ -1,10 +1,10 @@
-﻿.profile-page .summary-container {
+﻿.summary-container {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .summary-container .display-name {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 3.5rem;
 }
 
@@ -30,20 +30,22 @@
     font-weight: 700;
 }
 
-.top-artists-container .artist-image-container,
-.top-tracks-container .track-image-container {
+.section-container .section-image-container {
     aspect-ratio: 1 / 1;
     overflow: hidden;
 }
 
-.artist-image-container img {
+.section-image-container img {
     object-fit: cover;
     object-position: center;
+}
+
+.artist-image-container img {
     border-radius: 50%;
 }
 
 .top-artists-container .top-artist-card {
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
@@ -58,8 +60,6 @@
 }
 
 .track-image-container img {
-    object-fit: cover;
-    object-position: center;
     border-radius: 5px;
 }
 
@@ -70,4 +70,21 @@
 
 .top-tracks-table tr:hover {
     background-color: var(--gray);
+    opacity: 1;
 }
+
+.playlist-image-container {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+.public-playlists-container .playlist-card {
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.public-playlists-container .playlist-card:hover {
+    filter: brightness(1.2);
+    background-color: var(--gray);
+}
+

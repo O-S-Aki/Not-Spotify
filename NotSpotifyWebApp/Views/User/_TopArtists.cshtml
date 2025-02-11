@@ -1,0 +1,42 @@
+﻿@model ArtistListViewModel
+
+@{
+    int maxTopArtists = 6;
+}
+
+<div class="container top-artists-container section-container mt-3 p-4 d-flex flex-column">
+    <h5 class="m-0 section-header">Top artists this month</h5>
+    <div class="d-flex flex-row justify-content-between">
+        <p class="m-0 translucent-text">Only visible to you</p>
+        <p class="m-0 translucent-text"><strong>Show all</strong></p>
+    </div>
+
+    <div class="top-artist-cards mt-3 row">
+        @for (int i = 0; i < maxTopArtists; i++)
+        {
+            if (i < Model.Items.Count)
+            {
+                ArtistViewModel artist = Model.Items[i];
+
+                <div class="top-artist-card responsive-card col-6 col-sm-4 col-md-3 col-lg-2 p-3">
+                    <a asp-controller="Artist" asp-action="Profile" asp-route-id="@artist.Id">
+                        <div class="artist-image-container section-image-container w-100">
+                            <img src="@artist.Image" class="w-100 h-100" />
+                        </div>
+
+                        <div class="artist-text-container text-container">
+                            <h6 class="page-link mt-3 mb-0">@artist.Name</h6>
+                            <p class="translucent-text mb-0">@artist.Type</p>
+                        </div>
+                    </a>
+                </div>
+
+            }
+            else
+            {
+                <div class="top-artist-card col p-2">
+                </div>
+            }
+        }
+    </div>
+</div>
