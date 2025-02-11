@@ -26,6 +26,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aXN0XFByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/Artist/_Discography.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aXN0XF9EaXNjb2dyYXBoeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/Artist/_PopularTracks.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aXN0XF9Qb3B1bGFyVHJhY2tzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

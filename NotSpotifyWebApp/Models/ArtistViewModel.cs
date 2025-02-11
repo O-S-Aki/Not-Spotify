@@ -38,7 +38,7 @@ namespace NotSpotifyWebApp.Models
             PopularityStars = artist.Popularity / 10;
             PopularityHasHalfStar = artist.Popularity % 10 >= 5;
 
-            Type = $"{Type[0].ToString().ToUpper()}{Type.Substring(1)}";
+            Type = $"{Type[0].ToString().ToUpper()}{Type[1..]}";
         }
 
         /// <summary>
@@ -46,11 +46,23 @@ namespace NotSpotifyWebApp.Models
         /// </summary>
         /// <param name="artist">The artist to view.</param>
         /// <param name="topTracks">Their top tracks.</param>
+        /// <param name="discographyFull">Their full discography.</param>
+        /// <param name="discographyAlbums">Their discography of only albums.</param>
+        /// <param name="discographySingles">Their disccography of only singles.</param>
         [SetsRequiredMembers]
-        public ArtistViewModel(FullArtist artist, ArtistsTopTracksResponse topTracks)
+        public ArtistViewModel(
+            FullArtist artist,
+            ArtistsTopTracksResponse topTracks,
+            List<SimpleAlbum> discographyFull,
+            List<SimpleAlbum> discographyAlbums,
+            List<SimpleAlbum> discographySingles)
             : this(artist)
         {
             TopTracks = new TrackListViewModel(topTracks);
+
+            DiscographyFull = new AlbumListViewModel(discographyFull);
+            DiscographyAlbums = new AlbumListViewModel(discographyAlbums);
+            DiscographySingles = new AlbumListViewModel(discographySingles);
         }
 
         /// <summary>
@@ -106,7 +118,22 @@ namespace NotSpotifyWebApp.Models
         /// <summary>
         /// Gets or sets the top tracks.
         /// </summary>
-        public required TrackListViewModel? TopTracks { get; set; }
+        public TrackListViewModel? TopTracks { get; set; }
+
+        /// <summary>
+        /// Gets or sets the full discography.
+        /// </summary>
+        public AlbumListViewModel? DiscographyFull { get; set; }
+
+        /// <summary>
+        /// Gets or sets the albums in the discography.
+        /// </summary>
+        public AlbumListViewModel? DiscographyAlbums { get; set; }
+
+        /// <summary>
+        /// Gets or sets the singles in the discography.
+        /// </summary>
+        public AlbumListViewModel? DiscographySingles { get; set; }
 
         /// <summary>
         /// Converts from a list of <see cref="FullArtist"/> to a list of <see cref="ArtistViewModel"/>.

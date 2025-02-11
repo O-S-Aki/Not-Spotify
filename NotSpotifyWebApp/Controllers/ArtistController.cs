@@ -62,7 +62,47 @@ namespace NotSpotifyWebApp.Controllers
             ArtistsTopTracksRequest tracksRequest = new ArtistsTopTracksRequest("GB");
             ArtistsTopTracksResponse topTracks = await spotify.Artists.GetTopTracks(id, tracksRequest);
 
-            return View(new ArtistViewModel(artist, topTracks));
+            ArtistsAlbumsRequest albumsRequest = new ArtistsAlbumsRequest()
+            {
+                IncludeGroupsParam = ArtistsAlbumsRequest.IncludeGroups.Album,
+            };
+
+            ArtistsAlbumsRequest singlesRequest = new ArtistsAlbumsRequest()
+            {
+                IncludeGroupsParam = ArtistsAlbumsRequest.IncludeGroups.Single,
+            };
+
+            Paging<SimpleAlbum> discographyPaged = await spotify.Artists.GetAlbums(id);
+            List<SimpleAlbum> discography = PagingToList(discographyPaged);
+
+            Paging<SimpleAlbum> albumsPaged = await spotify.Artists.GetAlbums(id, albumsRequest);
+            List<SimpleAlbum> albums = PagingToList(albumsPaged);
+
+            Paging<SimpleAlbum> singlesPaged = await spotify.Artists.GetAlbums(id, singlesRequest);
+            List<SimpleAlbum> singles = PagingToList(singlesPaged);
+
+            return View(new ArtistViewModel(artist, topTracks, discography, albums, singles));
+        }
+
+        /// <summary>
+        /// Returns a paged list of type <typeparamref name="T"/> to a list of the same type.
+        /// </summary>
+        /// <typeparam name="T">A generic type.</typeparam>
+        /// <param name="pagedList">The paged list to convert.</param>
+        /// <returns>The returned list.</returns>
+        private static List<T> PagingToList<T>(Paging<T> pagedList)
+        {
+            List<T> list = new List<T>();
+
+            if (pagedList.Items != null && pagedList.Items.Any())
+            {
+                foreach (T item in pagedList.Items)
+                {
+                    list.Add(item);
+                }
+            }
+
+            return list;
         }
     }
 }

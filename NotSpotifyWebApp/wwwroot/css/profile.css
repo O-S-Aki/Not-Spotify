@@ -76,11 +76,15 @@
 .playlist-image-container {
     object-fit: cover;
     object-position: center;
-    border-radius: 20px;
 }
+
+.playlist-image-container img {
+    border-radius: 10px;
+}
+
 .public-playlists-container .playlist-card {
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .public-playlists-container .playlist-card:hover {
