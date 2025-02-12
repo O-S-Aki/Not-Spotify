@@ -1,0 +1,42 @@
+﻿@model AlbumViewModel
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<div class="album-page mt-0">
+
+    <div class="container summary-container row">
+        <div class="col col-12 col-md-4 col-lg-3 faded-image-container section-image-container album-image-container">
+            <img class="w-100 h-100" src="@Model.Image" />
+        </div>
+        <div class="col col-12 col-md-8 col-lg-9 album-description d-flex flex-column justify-content-end">
+            <p class="m-0">@Model.Type</p>
+            <p class="display-name mb-1">@Model.Name</p>
+            <div class="d-flex flex-row gap-3">
+                <div class="album-lead-artist-image-container section-image-container artist-image-container">
+                    <img src="@Model.LeadArtist!.Image" class="w-100 h-100" />
+                </div>
+                <p>
+                    <strong>@Model.LeadArtist.Name</strong>
+                    <i class="bi bi-dot"></i>
+                    <span class="translucent-text">
+                        @Model.ReleaseDate
+                        <i class="bi bi-dot"></i>
+
+                        @{
+                            string text = Model.TotalTracks > 1 ? "songs" : "song";
+                        }
+
+                        @Model.TotalTracks @text, @Model.AlbumDuration
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <partial name="_Tracks.cshtml" model="@Model.Tracks" />
+
+</div>

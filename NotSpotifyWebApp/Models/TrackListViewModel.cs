@@ -41,6 +41,17 @@ namespace NotSpotifyWebApp.Models
         }
 
         /// <summary>
+        /// Initializes a new instance of the <see cref="TrackListViewModel"/> class.
+        /// </summary>
+        /// <param name="tracks">The list of tracks tracks.</param>
+        [SetsRequiredMembers]
+        public TrackListViewModel(List<SimpleTrack> tracks)
+        {
+            Total = tracks.Count;
+            Items = TrackViewModel.ToViewModels(tracks);
+        }
+
+        /// <summary>
         /// Gets or sets the total number of top artists for the month.
         /// </summary>
         public required int Total { get; set; }

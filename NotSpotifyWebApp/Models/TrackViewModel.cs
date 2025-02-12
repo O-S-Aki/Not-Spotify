@@ -40,6 +40,26 @@ namespace NotSpotifyWebApp.Models
         }
 
         /// <summary>
+        /// Initializes a new instance of the <see cref="TrackViewModel"/> class.
+        /// </summary>
+        /// <param name="track">The track to view.</param>
+        [SetsRequiredMembers]
+        public TrackViewModel(SimpleTrack track)
+        {
+            Id = track.Id;
+            Href = track.Href;
+            Uri = track.Uri;
+            Name = track.Name;
+            Artists = track.Artists;
+            DurationMs = track.DurationMs;
+            Explicit = track.Explicit;
+            TrackNumber = track.TrackNumber;
+            Type = track.Type;
+
+            DurationFormatted = TimeSpan.FromMilliseconds(DurationMs).ToString(@"mm\:ss");
+        }
+
+        /// <summary>
         /// Gets or sets the Id.
         /// </summary>
         public required string Id { get; set; }
@@ -62,7 +82,7 @@ namespace NotSpotifyWebApp.Models
         /// <summary>
         /// Gets or sets the Album that the track belongs to.
         /// </summary>
-        public required SimpleAlbum Album { get; set; }
+        public SimpleAlbum? Album { get; set; }
 
         /// <summary>
         /// Gets or sets the artists on the song.
@@ -105,6 +125,23 @@ namespace NotSpotifyWebApp.Models
             List<TrackViewModel> viewModels = new List<TrackViewModel>();
 
             foreach (FullTrack track in tracks)
+            {
+                viewModels.Add(new TrackViewModel(track));
+            }
+
+            return viewModels;
+        }
+
+        /// <summary>
+        /// Converts a list of <see cref="SimpleTrack"/> to a list of <see cref="TrackViewModel"/>.
+        /// </summary>
+        /// <param name="tracks">A list of track objects.</param>
+        /// <returns>A list of Track View Models.</returns>
+        public static List<TrackViewModel> ToViewModels(List<SimpleTrack> tracks)
+        {
+            List<TrackViewModel> viewModels = new List<TrackViewModel>();
+
+            foreach (SimpleTrack track in tracks)
             {
                 viewModels.Add(new TrackViewModel(track));
             }

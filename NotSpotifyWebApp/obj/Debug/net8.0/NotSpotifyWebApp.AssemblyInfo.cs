@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NotSpotifyWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c37bb0d779fd19a63d8eb2a723143690f6214385")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+928df5e4b4f5dbc27e7cc9297cf452ea09fe1153")]
 [assembly: System.Reflection.AssemblyProductAttribute("NotSpotifyWebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NotSpotifyWebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

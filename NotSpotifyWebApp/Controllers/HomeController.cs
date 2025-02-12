@@ -1,6 +1,6 @@
 ﻿/*==============================================================================
  *
- * Description - Controlls the views and actions regarding the home endpoint.
+ * Description - Controls the views and actions regarding the home endpoint.
  *
  * Copyright © Dami Sam Akiode, 2025
  *

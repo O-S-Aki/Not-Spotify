@@ -1,6 +1,6 @@
 ﻿/*==============================================================================
  *
- * Description - Controlls the views and actions regarding user authentication.
+ * Description - Controls the views and actions regarding user authentication.
  *
  * Copyright © Dami Sam Akiode, 2025
  *

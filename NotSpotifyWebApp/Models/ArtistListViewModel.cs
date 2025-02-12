@@ -1,10 +1,10 @@
 ﻿/*==============================================================================
  *
- * Description - The model for viewing the currently logged in user's top artists.
+ * Description - The model for viewing a list of artists.
  *
  * Copyright © Dami Sam Akiode, 2025
  *
- * Personal Project - Not Spotify (TopArtistsViewModel.cs)
+ * Personal Project - Not Spotify (ArtistListViewModel.cs)
  *
  *============================================================================*/
 
@@ -25,15 +25,20 @@ namespace NotSpotifyWebApp.Models
         [SetsRequiredMembers]
         public ArtistListViewModel(UsersTopArtistsResponse topArtists)
         {
-            Href = topArtists.Href;
             Total = topArtists.Total;
             Items = ArtistViewModel.ToViewModels(topArtists.Items);
         }
 
         /// <summary>
-        /// Gets or sets the Href.
+        /// Initializes a new instance of the <see cref="ArtistListViewModel"/> class.
         /// </summary>
-        public required string Href { get; set; }
+        /// <param name="relatedArtists">The artis's related artists.</param>
+        [SetsRequiredMembers]
+        public ArtistListViewModel(ArtistsRelatedArtistsResponse relatedArtists)
+        {
+            Total = relatedArtists.Artists.Count;
+            Items = ArtistViewModel.ToViewModels(relatedArtists.Artists);
+        }
 
         /// <summary>
         /// Gets or sets the total number of top artists for the month.

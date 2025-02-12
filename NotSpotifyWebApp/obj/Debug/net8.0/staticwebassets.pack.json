@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\NotSpotifyWebApp.bundle.scp.css"
     },
     {
+      "Id": "C:\\Workspaces\\Sam Akiode\\O-S-Aki\\Not-Spotify\\NotSpotifyWebApp\\wwwroot\\css\\album-page.css",
+      "PackagePath": "staticwebassets\\css\\album-page.css"
+    },
+    {
       "Id": "C:\\Workspaces\\Sam Akiode\\O-S-Aki\\Not-Spotify\\NotSpotifyWebApp\\wwwroot\\css\\artist-page.css",
       "PackagePath": "staticwebassets\\css\\artist-page.css"
     },

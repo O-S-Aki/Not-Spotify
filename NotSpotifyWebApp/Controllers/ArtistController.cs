@@ -1,6 +1,6 @@
 ﻿/*==============================================================================
  *
- * Description - Controlls the views and actions regarding the artist controller.
+ * Description - Controls the views and actions regarding the artist controller.
  *
  * Copyright © Dami Sam Akiode, 2025
  *
@@ -16,29 +16,17 @@ using SpotifyAPI.Web;
 namespace NotSpotifyWebApp.Controllers
 {
     /// <summary>
-    /// Holds the definition for the <see cref="UserController"/> class.
+    /// Holds the definition for the <see cref="ArtistController"/> class.
     /// </summary>
-    public class ArtistController : Controller
+    public class ArtistController : BaseController
     {
-        private readonly SpotifyAuthService _SpotifyAuthService;
-
         /// <summary>
         /// Initializes a new instance of the <see cref="ArtistController"/> class.
         /// </summary>
         /// <param name="spotifyAuthService">The authentication service.</param>
         public ArtistController(SpotifyAuthService spotifyAuthService)
+            : base(spotifyAuthService)
         {
-            _SpotifyAuthService = spotifyAuthService;
-        }
-
-        /// <summary>
-        /// The default view for the artist section Spotify application.
-        /// </summary>
-        /// <returns>A redirect to the artist's profile.</returns>
-        [Route("artist")]
-        public IActionResult Index()
-        {
-            return RedirectToAction("profile");
         }
 
         /// <summary>
@@ -49,7 +37,7 @@ namespace NotSpotifyWebApp.Controllers
         [Route("artist/profile")]
         public async Task<IActionResult> ProfileAsync(string id)
         {
-            string accessToken = _SpotifyAuthService.GetAccessToken();
+            string accessToken = SpotifyAuthService.GetAccessToken();
             if (string.IsNullOrEmpty(accessToken))
             {
                 return Redirect("/auth/login");
@@ -82,27 +70,6 @@ namespace NotSpotifyWebApp.Controllers
             List<SimpleAlbum> singles = PagingToList(singlesPaged);
 
             return View(new ArtistViewModel(artist, topTracks, discography, albums, singles));
-        }
-
-        /// <summary>
-        /// Returns a paged list of type <typeparamref name="T"/> to a list of the same type.
-        /// </summary>
-        /// <typeparam name="T">A generic type.</typeparam>
-        /// <param name="pagedList">The paged list to convert.</param>
-        /// <returns>The returned list.</returns>
-        private static List<T> PagingToList<T>(Paging<T> pagedList)
-        {
-            List<T> list = new List<T>();
-
-            if (pagedList.Items != null && pagedList.Items.Any())
-            {
-                foreach (T item in pagedList.Items)
-                {
-                    list.Add(item);
-                }
-            }
-
-            return list;
         }
     }
 }

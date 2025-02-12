@@ -15,4 +15,9 @@
     <ProjectReference Include="..\NotSpotifyClassLibrary\NotSpotifyClassLibrary.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Track\" />
+    <Folder Include="Views\Playlist\" />
+  </ItemGroup>
+
 </Project>

@@ -28,7 +28,7 @@
                             <td>
                                 <div class="d-flex flex-row gap-3 align-middle">
                                     <div class="track-image-container section-image-container">
-                                        <img src="@track.Album.Images[0].Url" class="h-100" />
+                                        <img src="@track.Album!.Images[0].Url" class="h-100" />
                                     </div>
                                     
                                     <div>
@@ -60,7 +60,9 @@
 
                             <td class="align-middle">
                                 <div class="d-flex flex-row justify-content-between align-items-center">
-                                    <p class="m-0 translucent-text">@track.Album.Name</p>
+                                    <a asp-controller="Album" asp-action="Details" asp-route-id="@track.Album.Id">
+                                        <p class="m-0 translucent-text page-link">@track.Album.Name</p>
+                                    </a>
 
                                     <div class="d-flex flex-row gap-3 align-items-center">
                                         <p class="m-0 translucent-text">@track.DurationFormatted</p>

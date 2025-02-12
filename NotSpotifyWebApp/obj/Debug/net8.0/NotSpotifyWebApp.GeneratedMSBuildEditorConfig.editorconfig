@@ -22,6 +22,14 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/Album/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/Album/_Tracks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1cX1RyYWNrcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Workspaces/Sam Akiode/O-S-Aki/Not-Spotify/NotSpotifyWebApp/Views/Artist/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aXN0XFByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,6 +1,6 @@
 ﻿/*==============================================================================
  *
- * Description - Controlls the views and actions regarding the user controller.
+ * Description - Controls the views and actions regarding the user controller.
  *
  * Copyright © Dami Sam Akiode, 2025
  *
@@ -18,17 +18,15 @@ namespace NotSpotifyWebApp.Controllers
     /// <summary>
     /// Holds the definition for the <see cref="UserController"/> class.
     /// </summary>
-    public class UserController : Controller
+    public class UserController : BaseController
     {
-        private readonly SpotifyAuthService _SpotifyAuthService;
-
         /// <summary>
         /// Initializes a new instance of the <see cref="UserController"/> class.
         /// </summary>
         /// <param name="spotifyAuthService">The authentication service.</param>
         public UserController(SpotifyAuthService spotifyAuthService)
+            : base(spotifyAuthService)
         {
-            _SpotifyAuthService = spotifyAuthService;
         }
 
         /// <summary>
@@ -48,7 +46,7 @@ namespace NotSpotifyWebApp.Controllers
         [Route("user/profile")]
         public async Task<IActionResult> ProfileAsync()
         {
-            string accessToken = _SpotifyAuthService.GetAccessToken();
+            string accessToken = SpotifyAuthService.GetAccessToken();
             if (string.IsNullOrEmpty(accessToken))
             {
                 return Redirect("/auth/login");

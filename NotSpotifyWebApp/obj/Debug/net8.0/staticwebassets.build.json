@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VdLT/sLgXYZQah5+coKYuaMAPbjYwKgTdfWjzHVEYNw=",
+  "Hash": "gPYuYpqd9tkaPrJtwmA/saW0XwDiEvMVhu5qIcIIAcQ=",
   "Source": "NotSpotifyWebApp",
   "BasePath": "_content/NotSpotifyWebApp",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Workspaces\\Sam Akiode\\O-S-Aki\\Not-Spotify\\NotSpotifyWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NotSpotifyWebApp.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Workspaces\\Sam Akiode\\O-S-Aki\\Not-Spotify\\NotSpotifyWebApp\\wwwroot\\css\\album-page.css",
+      "SourceId": "NotSpotifyWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Workspaces\\Sam Akiode\\O-S-Aki\\Not-Spotify\\NotSpotifyWebApp\\wwwroot\\",
+      "BasePath": "_content/NotSpotifyWebApp",
+      "RelativePath": "css/album-page.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\album-page.css"
     },
     {
       "Identity": "C:\\Workspaces\\Sam Akiode\\O-S-Aki\\Not-Spotify\\NotSpotifyWebApp\\wwwroot\\css\\artist-page.css",
