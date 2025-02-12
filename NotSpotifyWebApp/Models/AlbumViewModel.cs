@@ -29,13 +29,15 @@ namespace NotSpotifyWebApp.Models
             Href = album.Href;
             Uri = album.Uri;
             Name = album.Name;
-            AlbumType = album.AlbumType;
+            Type = album.AlbumType;
             Image = album.Images[0].Url;
             Artists = album.Artists;
             TotalTracks = album.TotalTracks;
 
             DateTime albumReleaseDate = DateTime.Parse(album.ReleaseDate);
             ReleaseDate = albumReleaseDate.ToString("yyyy");
+
+            Type = $"{Type[0].ToString().ToUpper()}{Type.Substring(1)}";
         }
 
         /// <summary>
@@ -61,7 +63,7 @@ namespace NotSpotifyWebApp.Models
         /// <summary>
         /// Gets or sets the Album Type.
         /// </summary>
-        public required string AlbumType { get; set; }
+        public required string Type { get; set; }
 
         /// <summary>
         /// Gets or sets the Artists.

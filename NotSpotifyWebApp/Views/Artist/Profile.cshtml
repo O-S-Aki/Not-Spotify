@@ -4,12 +4,15 @@
     ViewData["Title"] = Model.Name;
 
     int remainingStars = 10;
+
+    string activeTab = ViewContext.HttpContext.Request.Query["tab"]!;
+    activeTab ??= "popular-releases";
 }
 
 <div class="artist-page mt-0">
 
     <div class="container summary-container section-container row g-3">
-        <div class="col col-12 col-lg-6 order-1 order-lg-0 artist-profile-description d-flex flex-column justify-content-end">
+        <div class="col col-12 col-lg-6 order-1 order-lg-0 artist-profile-description d-flex flex-column">
             <h5><i class="bi bi-patch-check-fill"></i> Verified Artist</h5>
             <p class="artist-display-name">@Model.Name</p>
             <h5>
@@ -41,5 +44,43 @@
         </div>
     </div>
 
-    <hr />
+    <div class="d-flex flex-row justify-content-between">
+        <h5 class="m-0 section-header">Discography</h5>
+        <p class="m-0 translucent-text"><strong>Show all</strong></p>
+    </div>
+
+    <ul class="nav nav-tabs mt-3">
+        <li class="nav-item m-1">
+            <a class="nav-link @(activeTab == "popular-releases" ? "active" : "")" aria-current="page" data-bs-toggle="tab" href="#popular-releases-tab">
+                Popular Releases
+            </a>
+        </li>
+        <li class="nav-item m-1">
+            <a class="nav-link @(activeTab == "albums" ? "active" : "")" data-bs-toggle="tab" href="#albums-tab">
+                Albums
+            </a>
+        </li>
+        <li class="nav-item m-1">
+            <a class="nav-link @(activeTab == "singles" ? "active" : "")" data-bs-toggle="tab" href="#singles-tab">
+                Singles & EPs
+            </a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <!-- Popular Releases -->
+        <div class="tab-pane fade @(activeTab == "popular-releases" ? "show active" : "")" id="popular-releases-tab">
+            <partial name="_Discography.cshtml" model="Model.DiscographyFull" />
+        </div>
+
+        <!-- Albums -->
+        <div class="tab-pane fade @(activeTab == "albums" ? "show active" : "")" id="albums-tab">
+            <partial name="_Discography.cshtml" model="@Model.DiscographyAlbums" />
+        </div>
+
+        <!-- Singles and EPs -->
+        <div class="tab-pane fade @(activeTab == "singles" ? "show active" : "")" id="singles-tab">
+            <partial name="_Discography.cshtml" model="@Model.DiscographySingles" />
+        </div>
+    </div>
 </div>

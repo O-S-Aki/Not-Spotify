@@ -26,3 +26,34 @@
     font-weight: 900;
     font-size: 3.5rem;
 }
+
+.discography-image-container img {
+    border-radius: 10px;
+}
+
+.nav-tabs {
+    border: none;
+}
+
+.nav-tabs .nav-item .nav-link {
+    color: var(--white);
+    background-color: var(--gray);
+    border-radius: 20px;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+    color: var(--black);
+    background-color: var(--white);
+    font-weight: 700;
+    border: none;
+}
+
+.nav-tabs .nav-item .nav-link:hover {
+    border: none;
+    background-color: var(--light-gray);
+    filter: brightness(1.2);
+}
+
+.nav-tabs .nav-item .nav-link.active:hover {
+    background-color: var(--white);
+}
