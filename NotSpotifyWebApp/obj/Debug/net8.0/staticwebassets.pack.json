@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\images\\spotify-icon-white.svg"
     },
     {
+      "Id": "C:\\Workspaces\\Sam Akiode\\O-S-Aki\\Not-Spotify\\NotSpotifyWebApp\\wwwroot\\js\\set-dominant-color.js",
+      "PackagePath": "staticwebassets\\js\\set-dominant-color.js"
+    },
+    {
       "Id": "C:\\Workspaces\\Sam Akiode\\O-S-Aki\\Not-Spotify\\NotSpotifyWebApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

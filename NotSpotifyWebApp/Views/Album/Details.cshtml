@@ -6,10 +6,13 @@
 
 <div class="album-page mt-0">
 
-    <div class="container summary-container row">
-        <div class="col col-12 col-md-4 col-lg-3 faded-image-container section-image-container album-image-container">
-            <img class="w-100 h-100" src="@Model.Image" />
+    <div id="dominant-color" class="container summary-container row p-4">
+        <div class="col col-12 mb-sm-4 mb-md-0 col-md-4 col-lg-3 p-2 section-image-container album-image-container">
+            <div class="w-75 d-sm-flex justify-content-center mx-sm-auto">
+                <img src="@Model.Image" class="w-100 h-100 get-dominant-color" crossorigin="anonymous" />
+            </div>
         </div>
+
         <div class="col col-12 col-md-8 col-lg-9 album-description d-flex flex-column justify-content-end">
             <p class="m-0">@Model.Type</p>
             <p class="display-name mb-1">@Model.Name</p>
@@ -34,8 +37,6 @@
             </div>
         </div>
     </div>
-
-    <hr />
 
     <partial name="_Tracks.cshtml" model="@Model.Tracks" />
 

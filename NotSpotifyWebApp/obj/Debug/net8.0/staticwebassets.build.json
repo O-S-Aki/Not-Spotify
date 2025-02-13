@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gPYuYpqd9tkaPrJtwmA/saW0XwDiEvMVhu5qIcIIAcQ=",
+  "Hash": "mNy+07DYMksfFNlk4q8Ub6R0uiQKSzatJAlBPU7k0bg=",
   "Source": "NotSpotifyWebApp",
   "BasePath": "_content/NotSpotifyWebApp",
   "Mode": "Default",
@@ -205,6 +205,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\spotify-icon-white.svg"
+    },
+    {
+      "Identity": "C:\\Workspaces\\Sam Akiode\\O-S-Aki\\Not-Spotify\\NotSpotifyWebApp\\wwwroot\\js\\set-dominant-color.js",
+      "SourceId": "NotSpotifyWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Workspaces\\Sam Akiode\\O-S-Aki\\Not-Spotify\\NotSpotifyWebApp\\wwwroot\\",
+      "BasePath": "_content/NotSpotifyWebApp",
+      "RelativePath": "js/set-dominant-color.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\set-dominant-color.js"
     },
     {
       "Identity": "C:\\Workspaces\\Sam Akiode\\O-S-Aki\\Not-Spotify\\NotSpotifyWebApp\\wwwroot\\js\\site.js",
