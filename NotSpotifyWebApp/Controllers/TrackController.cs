@@ -28,5 +28,33 @@ namespace NotSpotifyWebApp.Controllers
         : base(spotifyAuthService)
         {
         }
+
+        /// <summary>
+        /// The view for a track.
+        /// </summary>
+        /// <param name="id">The Id of the artist to view.</param>
+        /// <returns>The Profile View.</returns>
+        [Route("track/details")]
+        public async Task<IActionResult> DetailsAsync(string id)
+        {
+            string accessToken = SpotifyAuthService.GetAccessToken();
+            if (string.IsNullOrEmpty(accessToken))
+            {
+                return Redirect("/auth/login");
+            }
+
+            SpotifyClient spotify = new SpotifyClient(accessToken);
+
+            FullTrack track = await spotify.Tracks.Get(id);
+            FullArtist artist = await spotify.Artists.Get(track.Artists[0].Id);
+
+            ArtistsTopTracksRequest tracksRequest = new ArtistsTopTracksRequest("GB");
+            ArtistsTopTracksResponse topTracks = await spotify.Artists.GetTopTracks(artist.Id, tracksRequest);
+
+            Paging<SimpleAlbum> discographyPaged = await spotify.Artists.GetAlbums(artist.Id);
+            List<SimpleAlbum> discography = PagingToList(discographyPaged);
+
+            return View(new TrackViewModel(track, new ArtistViewModel(artist, topTracks, discography)));
+        }
     }
 }

@@ -28,17 +28,19 @@
                             <td>
                                 <div class="d-flex flex-row gap-3 align-middle">
                                     <div class="track-image-container section-image-container">
-                                        <img src="@track.Album!.Images[0].Url" class="h-100" />
+                                        <img src="@track.Album!.Image" class="h-100" />
                                     </div>
-                                    
+
                                     <div>
-                                        <h6 class="m-0">@track.Name</h6>
+                                        <a asp-controller="Track" asp-action="Details" asp-route-id="@track.Id">
+                                            <h6 class="m-0 page-link">@track.Name</h6>
+                                        </a>
                                         <p class="m-0 translucent-text">
                                             @if (track.Explicit)
                                             {
                                                 <i class="bi bi-explicit-fill m-1"></i>
                                             }
-                                            
+
                                             @{
                                                 var artists = track.Artists;
 
@@ -66,7 +68,7 @@
 
                                     <div class="d-flex flex-row gap-3 align-items-center">
                                         <p class="m-0 translucent-text">@track.DurationFormatted</p>
-                                        <i class="bi bi-three-dots"></i>
+                                        <i class="bi bi-three-dots table-dots"></i>
                                     </div>
                                 </div>
                             </td>

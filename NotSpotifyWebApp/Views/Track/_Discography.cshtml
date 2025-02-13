@@ -1,0 +1,45 @@
+﻿@model ArtistViewModel
+
+@{
+    int maxAlbums = 6;
+
+    AlbumListViewModel discography = Model.DiscographyFull!;
+}
+
+<div class="container cards-layout-container discography-container section-container mt-2 ps-4 pe-4 d-flex flex-column">
+    
+    <p class="m-0 translucent-text">Popular Releases by</p>
+    <h5 class="m-0 section-header">@Model.Name</h5>
+
+    <div class="discography-cards mt-3 row">
+        @for (int i = 0; i < maxAlbums; i++)
+        {
+            if (i < discography.Total)
+            {
+                AlbumViewModel album = discography.Items[i];
+                <a asp-controller="Album" asp-action="Details" asp-route-id="@album.Id"
+                    class="discography-card responsive-card col-6 col-sm-4 col-md-3 col-lg-2 p-2">
+
+                    <div class="discography-image-container section-image-container w-100 p-1">
+                        <img src="@album.Image" class="w-100 h-100" />
+                    </div>
+
+                    <div class="discography-text-container text-container">
+                        <h6 class="mt-3 mb-0 page-link">@album.Name</h6>
+                        <p class="translucent-text mb-0">
+                            @album.ReleaseDate
+                            <i class="bi bi-dot"></i>
+                            @album.Type
+                        </p>
+                    </div>
+                
+                </a>
+            }
+            else
+            {
+                <div class="discography-card col p-2">
+                </div>
+            }
+        }
+    </div>
+</div>

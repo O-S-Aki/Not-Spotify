@@ -66,6 +66,25 @@ namespace NotSpotifyWebApp.Models
         }
 
         /// <summary>
+        /// Initializes a new instance of the <see cref="ArtistViewModel"/> class.
+        /// </summary>
+        /// <param name="artist">The artist to view.</param>
+        /// <param name="topTracks">Their top tracks.</param>
+        /// <param name="discography">Their full discography.</param>
+        /// <param name="discographyAlbums">Their discography of only albums.</param>
+        /// <param name="discographySingles">Their disccography of only singles.</param>
+        [SetsRequiredMembers]
+        public ArtistViewModel(
+            FullArtist artist,
+            ArtistsTopTracksResponse topTracks,
+            List<SimpleAlbum> discography)
+            : this(artist)
+        {
+            TopTracks = new TrackListViewModel(topTracks);
+            DiscographyFull = new AlbumListViewModel(discography);
+        }
+
+        /// <summary>
         /// Gets or sets the Href.
         /// </summary>
         public required string Href { get; set; }

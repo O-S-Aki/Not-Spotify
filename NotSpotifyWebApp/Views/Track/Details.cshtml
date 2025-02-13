@@ -1,0 +1,92 @@
+﻿@model TrackViewModel
+
+@{
+    ViewData["Title"] = Model.Name;
+
+    int remainingStars = 10;
+}
+
+<div class="track-page mt-0">
+
+    <div id="dominant-color" class="container summary-container row p-4">
+        <div class="col col-12 mb-sm-4 mb-md-0 col-md-4 col-lg-3 p-2 section-image-container album-image-container">
+            <div class="w-75 d-sm-flex justify-content-center mx-sm-auto">
+                <img src="@Model.Image" class="w-100 h-100 get-dominant-color" crossorigin="anonymous" />
+            </div>
+        </div>
+
+        <div class="col col-12 col-md-8 col-lg-9 album-description d-flex flex-column justify-content-end">
+            <p class="m-0">@Model.Type</p>
+            <p class="display-name m-0">@Model.Name</p>
+            <h5 class="mb-3">
+                @for (int i = 0; i < Model.PopularityStars; i++)
+                {
+                    <i class="bi bi-star-fill"></i>
+                    remainingStars--;
+                }
+                @if (Model.PopularityHasHalfStar == true)
+                {
+                    <i class="bi bi-star-half"></i>
+                    remainingStars--;
+                }
+                @for (int i = 0; i < remainingStars; i++)
+                {
+                    <i class="bi bi-star"></i>
+                }
+            </h5>
+            <div class="d-flex flex-row gap-3">
+                <div class="album-lead-artist-image-container section-image-container artist-image-container">
+                    <img src="@Model.LeadArtist!.Image" class="w-100 h-100" />
+                </div>
+                <p>
+                    <a asp-controller="Artist" asp-action="Profile" asp-route-id="@Model.LeadArtist.Id">
+                        <span class="page-link d-inline">
+                            <strong>@Model.LeadArtist.Name</strong>
+                        </span>
+                    </a>
+                    <i class="bi bi-dot"></i>
+
+                    @if (Model.Album != null)
+                    {
+                        <a asp-controller="Album" asp-action="Details" asp-route-id="@Model.Album.Id">
+                            <span class="page-link d-inline">
+                                @Model.Album.Name
+                            </span>
+                        </a>
+                        <i class="bi bi-dot"></i>
+                    }
+
+                    <span class="translucent-text">
+                        
+                        @if (Model.Album != null)
+                        {
+                            @Model.Album.ReleaseDate
+                            <i class="bi bi-dot"></i>
+                        }
+
+                        @Model.DurationFormatted
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="play-controls p-4 d-flex flex-row gap-1">
+        <button class="btn play-button primary-button">
+            <i class="bi bi-play-circle-fill"></i>
+        </button>
+        <button class="btn play-button secondary-button translucent-text">
+            <i class="bi bi-plus-circle"></i>
+        </button>
+        <button class="btn play-button secondary-button translucent-text">
+            <i class="bi bi-three-dots"></i>
+        </button>
+    </div>
+
+    <hr />
+
+    <partial name="_PopularTracks.cshtml" model="Model.LeadArtist" />
+
+    <partial name="_Discography.cshtml" model="Model.LeadArtist" />
+
+</div>

@@ -14,37 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(`Chosen color: ${chosenColor}`);
 
         const rgbColor = `rgb(${chosenColor[0]}, ${chosenColor[1]}, ${chosenColor[2]})`;
-
         container.style.background = `linear-gradient(to bottom, ${rgbColor}, #121212)`;
-        console.log(container.style.background);
     };
 
     if (image.complete) {
         image.onload();
     }
 });
-
-
-/*
-// finds the first color (regardless of brightness) to use as the base of the gradient
-document.addEventListener("DOMContentLoaded", function () {
-    const colorThief = new ColorThief();
-
-    const image = $('.get-dominant-color')[0];
-    const container = $('#dominant-color')[0];
-
-    image.onload = function () {
-        const dominantColor = colorThief.getColor(image);
-        console.log(`The dominant color is ${dominantColor}`);
-
-        const rgbColor = `rgb(${dominantColor[0]}, ${dominantColor[1]}, ${dominantColor[2]})`;
-
-        container.style.background = `linear-gradient(to bottom, ${rgbColor}, #121212)`;
-        console.log(container.style.background);
-    };
-
-    if (image.complete) {
-        image.onload();
-    }
-});
-*/

@@ -68,18 +68,15 @@
     border-radius: 5px;
 }
 
-.top-tracks-table tr {
+.top-tracks-table tbody tr {
     background-color: var(--black);
     cursor: pointer;
 }
 
-.top-tracks-table tr:hover {
-    filter: brightness(1.2);
-}
-
-.top-tracks-table tr:hover {
+.top-tracks-table tbody tr:hover {
     background-color: var(--gray);
     opacity: 1;
+    filter: brightness(1.2);
 }
 
 .playlist-image-container {
@@ -101,6 +98,6 @@
     background-color: var(--gray);
 }
 
-tr:hover .translucent-text {
+tbody tr:hover .translucent-text {
     opacity: 1 !important;
 }

@@ -1,9 +1,28 @@
 ﻿@model TrackListViewModel
 @using SpotifyAPI.Web;
 
-<div class="container top-tracks-container section-container mt-3 p-4 d-flex flex-column">
-    <div class="table-responsive mt-3">
+<div class="container top-tracks-container section-container p-4 d-flex flex-column">
+    <div class="table-responsive">
         <table class="table top-tracks-table">
+            <thead>
+                <tr class="d-flex flex-row justify-content-between">
+                    <th class="align-middle">
+                        <div class="d-flex flex-row gap-3 align-middle">
+                            <p class="m-0 translucent-text track-number">#</p>
+                            <p class="m-0 translucent-text">Title</p>
+                        </div>
+                    </th>
+
+                    <th class="align-middle">
+                        <div class="d-flex flex-row justify-content-between align-items-center">
+                            <div class="d-flex flex-row gap-3 align-items-center">
+                                <p class="m-0 translucent-text"><i class="bi bi-clock"></i></p>
+                                <i class="bi bi-three-dots table-dots"></i>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
             <tbody>
                 @for (int i = 0; i < Model.Items.Count; i++)
                 {
@@ -11,10 +30,12 @@
                     <tr class="d-flex flex-row justify-content-between">
                         <td class="align-middle">
                             <div class="d-flex flex-row gap-3 align-middle">
-                                <p class="ps-3 m-0 translucent-text">@(i + 1)</p>
+                                <p class="m-0 translucent-text track-number">@(i + 1)</p>
 
                                 <div>
-                                    <h6 class="m-0">@track.Name</h6>
+                                    <a asp-controller="Track" asp-action="Details" asp-route-id="@track.Id">
+                                        <h6 class="m-0 page-link">@track.Name</h6>
+                                    </a>
                                     <p class="m-0 translucent-text">
                                         @if (track.Explicit)
                                         {
@@ -41,10 +62,10 @@
                         </td>
 
                         <td class="align-middle">
-                            <div class="d-flex flex-row justify-content-between align-items-center">
+                            <div class="d-flex h-100 flex-row justify-content-between align-items-center">
                                 <div class="d-flex flex-row gap-3 align-items-center">
                                     <p class="m-0 translucent-text">@track.DurationFormatted</p>
-                                    <i class="bi bi-three-dots"></i>
+                                    <i class="bi bi-three-dots table-dots"></i>
                                 </div>
                             </div>
                         </td>

@@ -30,7 +30,7 @@ namespace NotSpotifyWebApp.Controllers
         }
 
         /// <summary>
-        /// The view for an artist's profile.
+        /// The view for an album.
         /// </summary>
         /// <param name="id">The Id of the artist to view.</param>
         /// <returns>The Profile View.</returns>

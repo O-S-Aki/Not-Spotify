@@ -29,7 +29,7 @@ namespace NotSpotifyWebApp.Models
             Href = track.Href;
             Uri = track.Uri;
             Name = track.Name;
-            Album = track.Album;
+            Album = new AlbumViewModel(track.Album);
             Artists = track.Artists;
             DurationMs = track.DurationMs;
             Explicit = track.Explicit;
@@ -37,6 +37,30 @@ namespace NotSpotifyWebApp.Models
             Type = track.Type;
 
             DurationFormatted = TimeSpan.FromMilliseconds(DurationMs).ToString(@"mm\:ss");
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TrackViewModel"/> class.
+        /// </summary>
+        /// <param name="track">The track to view.</param>
+        /// <param name="leadArtist">The track's lead artist.</param>
+        [SetsRequiredMembers]
+        public TrackViewModel(FullTrack track, ArtistViewModel leadArtist)
+            : this(track)
+        {
+            LeadArtist = leadArtist;
+
+            if (track.Album.Images[0] != null)
+            {
+                Image = track.Album.Images[0].Url;
+            }
+            else
+            {
+                Image = LeadArtist.Image;
+            }
+
+            PopularityStars = track.Popularity / 10;
+            PopularityHasHalfStar = track.Popularity % 10 >= 5;
         }
 
         /// <summary>
@@ -82,7 +106,7 @@ namespace NotSpotifyWebApp.Models
         /// <summary>
         /// Gets or sets the Album that the track belongs to.
         /// </summary>
-        public SimpleAlbum? Album { get; set; }
+        public AlbumViewModel? Album { get; set; }
 
         /// <summary>
         /// Gets or sets the artists on the song.
@@ -114,6 +138,26 @@ namespace NotSpotifyWebApp.Models
         /// (Track, Episode, or Chapter).
         /// </summary>
         public required ItemType Type { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Image.
+        /// </summary>
+        public string? Image { get; set; }
+
+        /// <summary>
+        /// Gets or sets the lead artist.
+        /// </summary>
+        public ArtistViewModel? LeadArtist { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Popularity.
+        /// </summary>
+        public int? PopularityStars { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether a half star should be drawn for the popularity.
+        /// </summary>
+        public bool? PopularityHasHalfStar { get; set; }
 
         /// <summary>
         /// Converts a list of <see cref="FullTrack"/> to a list of <see cref="TrackViewModel"/>.

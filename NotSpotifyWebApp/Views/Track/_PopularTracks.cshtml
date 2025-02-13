@@ -1,20 +1,22 @@
-﻿@model TrackListViewModel
+﻿@model ArtistViewModel
 
 @{
     int maxTopTracks = 5;
 }
 
 <div class="container top-tracks-container section-container mt-3 p-4 d-flex flex-column">
-    <h5 class="m-0 section-header">Popular</h5>
+    <p class="m-0 translucent-text">Popular Tracks by</p>
+    <h5 class="m-0 section-header">@Model.Name</h5>
 
     <div class="table-responsive mt-3">
         <table class="table top-tracks-table">
             <tbody>
                 @for (int i = 0; i < maxTopTracks; i++)
                 {
-                    if (i < Model.Items.Count)
+                    TrackListViewModel tracks = Model.TopTracks!;
+                    if (i < tracks.Items.Count)
                     {
-                        TrackViewModel track = Model.Items[i];
+                        TrackViewModel track = tracks.Items[i];
 
                         <tr>
                             <td class="align-middle">

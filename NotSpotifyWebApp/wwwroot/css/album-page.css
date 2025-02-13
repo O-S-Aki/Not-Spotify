@@ -6,3 +6,54 @@
     border-radius: 10px;
     box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.6);
 }
+
+.table .track-number {
+    min-width: 2ch;
+    text-align: right;
+}
+
+.table th {
+    color: white;
+    background-color: var(--black);
+    border: none;
+    font-weight: 500
+}
+
+.table thead {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+tr .table-dots {
+    opacity: 0;
+    visibility: hidden;
+}
+
+tr:hover .table-dots {
+    opacity: 1;
+    visibility: visible;
+}
+
+.primary-button {
+    color: var(--primary);
+    border-radius: 50%;
+    font-size: 4rem;
+}
+
+.secondary-button {
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 2.5rem;
+}
+
+.play-button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+.primary-button:hover {
+    color: var(--primary);
+}
+
+.secondary-button:hover {
+    color: var(--white);
+}
