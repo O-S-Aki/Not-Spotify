@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "ContainingType": "NotSpotifyWebApp.Controllers.ApiController",
+    "Method": "GetAccessToken",
+    "RelativePath": "api/token",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

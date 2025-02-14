@@ -50,6 +50,10 @@ tr:hover .table-dots {
     filter: brightness(1.2);
 }
 
+.play-button:active {
+    border: none;
+}
+
 .primary-button:hover {
     color: var(--primary);
 }

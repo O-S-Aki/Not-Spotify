@@ -38,16 +38,16 @@
         </div>
     </div>
 
-    <div class="play-controls p-4 d-flex flex-row gap-1">
-        <button class="btn play-button primary-button">
+    <div class="play-controls p-4 d-flex flex-row align-items-center gap-1">
+        <div class="btn play-button play primary-button" data-track-id="@Model.Id">
             <i class="bi bi-play-circle-fill"></i>
-        </button>
-        <button class="btn play-button secondary-button translucent-text">
+        </div>
+        <div class="btn play-button secondary-button translucent-text">
             <i class="bi bi-plus-circle"></i>
-        </button>
-        <button class="btn play-button secondary-button translucent-text">
+        </div>
+        <div class="btn play-button secondary-button translucent-text">
             <i class="bi bi-three-dots"></i>
-        </button>
+        </div>
     </div>
 
     <partial name="_Tracks.cshtml" model="@Model.Tracks" />

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mNy+07DYMksfFNlk4q8Ub6R0uiQKSzatJAlBPU7k0bg=",
+  "Hash": "pSkvtaUXoKFGVvDjgn9iP2LBTh0T58Y+BTrJeyfxPJU=",
   "Source": "NotSpotifyWebApp",
   "BasePath": "_content/NotSpotifyWebApp",
   "Mode": "Default",
@@ -243,6 +243,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Workspaces\\Sam Akiode\\O-S-Aki\\Not-Spotify\\NotSpotifyWebApp\\wwwroot\\js\\spotify-player.js",
+      "SourceId": "NotSpotifyWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Workspaces\\Sam Akiode\\O-S-Aki\\Not-Spotify\\NotSpotifyWebApp\\wwwroot\\",
+      "BasePath": "_content/NotSpotifyWebApp",
+      "RelativePath": "js/spotify-player.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\spotify-player.js"
     },
     {
       "Identity": "C:\\Workspaces\\Sam Akiode\\O-S-Aki\\Not-Spotify\\NotSpotifyWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

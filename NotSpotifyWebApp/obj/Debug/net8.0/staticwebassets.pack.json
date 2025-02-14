@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "C:\\Workspaces\\Sam Akiode\\O-S-Aki\\Not-Spotify\\NotSpotifyWebApp\\wwwroot\\js\\spotify-player.js",
+      "PackagePath": "staticwebassets\\js\\spotify-player.js"
+    },
+    {
       "Id": "C:\\Workspaces\\Sam Akiode\\O-S-Aki\\Not-Spotify\\NotSpotifyWebApp\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
